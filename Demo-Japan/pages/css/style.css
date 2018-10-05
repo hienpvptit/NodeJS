@@ -1,0 +1,20 @@
+@font-face {
+    font-family: myFont;
+    src: url(Ubuntu-L.ttf);
+}
+
+body{
+    font-family: myFont;
+    width: auto;
+    height: auto;
+    margin: auto;
+    background-color: white;
+    font-size: 18px;
+    font-weight: normal;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/pages/css/style.css" rel="stylesheet">
+    <link href="/pages/css/philippines.css" rel="stylesheet">
+    <link href="/pages/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link href="/pages/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="/pages/photos/ico.png"/>
+    <script src="/pages/scripts/jquery-3.2.1.min.js"></script>
+    <script src="/pages/scripts/Chart.min.js"></script>
+    <script src="/pages/scripts/bootstrap.min.js"></script>
+    <script src="/pages/scripts/bootstrap-toggle.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var country = "philippines";
+    </script>
+    <title>Philippines</title>
+</head>
+<body>
+
+<div id="content">
+    <div id="title">
+        <div class="in-title">
+            <select id="select-country">
+                <option>Viet Nam</option>
+                <option>Philippines</option>
+            </select>
+        </div>
+        <div class="in-title">
+            <select id="select-device" onchange="changeDevice(this);">
+
+            </select>
+        </div>
+        <div class="in-title">
+            <div id="time-country">
+                Time: &nbsp; -- : -- : --
+            </div>
+        </div>
+    </div>
+    <div id="overview">
+        <div class="half">
+            <div class="half-half">
+                <div class="title-half-half">
+                    <h1>Camera</h1>
+                </div>
+                <div id="camera">
+                    <img src="/pages/photos/icon-livestream.jpg" style="width: 40vw; height: 19vw;"/>
+                </div>
+            </div>
+            <div class="half-half">
+                <center>
+                    <div class="title-half-half">
+                        <h1>Chart</h1>
+                    </div>
+                    <div id="chart">
+                        <canvas id="mychart"></canvas>
+                    </div>
+                </center>
+            </div>
+        </div>
+        <div class="half">
+            <div class="half-half">
+                <div class="title-half-half">
+                    <h1>Control Devices</h1>
+                </div>
+                <center>
+                    <div id="control">
+                        <div id="div-switch1" style="margin-left: 1vw; float: left;" onclick="switch_onclick(this);">
+                            <input type="checkbox" disabled data-toggle="toggle" data-on="Relay 1" data-off="Relay 1" data-onstyle="success" data-offstyle="danger" data-width="10vw" data-height="7vw" id="esp1-switch1">
+                        </div>
+                        <div id="div-switch2" style="margin-left: 1vw; float: left;" onclick="switch_onclick(this);">
+                            <input type="checkbox" disabled data-toggle="toggle" data-on="Relay 2" data-off="Relay 2" data-onstyle="success" data-offstyle="danger" data-width="10vw" data-height="7vw" id="esp1-switch2">
+                        </div>
+                        <div id="div-switch3" style="margin-left: 1vw; float: left;" onclick="switch_onclick(this);">
+                            <input type="checkbox" disabled data-toggle="toggle" data-on="Relay 3" data-off="Relay 3" data-onstyle="success" data-offstyle="danger" data-width="10vw" data-height="7vw" id="esp1-switch3">
+                        </div>
+                    </div>
+                </center>
+            </div>
+            <div class="half-half">
+                <div class="title-half-half">
+                    <h1>Testbed</h1>
+                    <img id="testbed" src="/pages/photos/testbed.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script language="JavaScript" src="/pages/scripts/client.js"></script>
+<script>
+    $("#select-country")[0].value = "Philippines";
+</script>
+</html>

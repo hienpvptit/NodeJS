@@ -1,0 +1,108 @@
+.client-logo{
+    margin-top: 0.2cm;
+}
+
+/*
+
+*/
+
+#content{
+    width: 100%;
+    height: 51.5vw;
+    margin: auto;
+    float: left;
+    background-color: #e6e6e6;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+#content #title{
+    width: 100%;
+    height: 4vw;
+    background-color: #d8d8d8;
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+.in-title{
+    width: auto;
+    height: 100%;
+    float: left;
+    margin: auto;
+    text-align: center;
+}
+
+.in-title select{
+   font-weight: normal; 
+   vertical-align: middle;
+    margin: auto;
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+
+#content #title #time-country{
+    margin: auto;
+    width: 15vw;
+    height: 3vw;
+    float: left;
+    margin-left: 3vw;
+    margin-top: 1vw;
+}
+
+#content #overview{
+    width: 100%;
+    height: 47.5vw;
+}
+
+#content #overview .half{
+    margin: auto;
+    margin-top: 1vw;
+    width: 100%;
+    height: 22vw;
+}
+
+#content #overview .half-half{
+    float: left;
+    margin: auto;
+    margin-left: 1vw;
+    width: 48%;
+    height: 22vw;
+}
+
+#content #overview .half-half .title-half-half{
+    margin: auto;
+    margin-top: 0vw;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+#content #overview .half-half .title-half-half h1{
+    margin-top: 0vw;
+    text-align: center;
+    margin: center;
+    font-size: 1.5vw;
+}
+
+#content #overview .half-half #control{
+    width: 70%;
+    height: 8vw;
+    margin: auto;
+    margin-top: 5vw;
+}
+
+
+#testbed{
+    width: 40vw;
+    height: 19vw;
+}
+
+#chart{
+    text-align: center;
+    width: 40vw;
+    height: 19vw;
+}
+
+
+

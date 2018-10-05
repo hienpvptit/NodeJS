@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/pages/css/style.css" rel="stylesheet">
+    <link href="/pages/css/index.css" rel="stylesheet">
+    <script src="/pages/scripts/jquery-3.2.1.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/pages/photos/ico.png"/>
+    <title>Index</title>
+</head>
+<body>
+<div id="title">
+    <h1>Select Country</h1>
+</div>
+<div id="logo">
+    <div id="logo-vietnam">
+        <img src="/pages/photos/vietnam.png" height="200" width="300" id="img-vietnam"/>
+    </div>
+    <div id="logo-philippines">
+        <img src="/pages/photos/philippines.png" height="200" width="300" id="img-philippines"/>
+    </div>
+</div>
+</body>
+<script>
+    $("img").on('mouseenter', function(){
+        $(this).animate({ margin: -10, width: "+=20", height: "+=20" });
+    });
+
+    $("img").on('mouseleave', function(){
+        $(this).animate({ margin: 0, width: "-=20", height: "-=20" });
+    });
+
+    $("#img-vietnam").on('click', function(){
+        location.replace("/vietnam");
+    });
+
+    $("#img-philippines").on('click', function(){
+        location.replace("/philippines");
+    });
+</script>
+</html>

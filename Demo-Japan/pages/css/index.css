@@ -1,0 +1,26 @@
+#title{
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-top: 2cm;
+    text-align: center;
+}
+
+#logo{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 2cm;
+}
+
+#logo-vietnam{
+    width: 45%;
+    text-align: right;
+    float: left;
+}
+
+#logo-philippines{
+    width: 45%;
+    text-align: left;
+    float: right;
+}
