@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="/pages/css/bootstrap-toggle.min.css" rel="stylesheet">
+		<link href="/pages/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="shortcut icon" type="image/x-icon" href="/pages/photos/ico.png"/>
+		<script src="/pages/scripts/jquery-3.2.1.min.js"></script>
+		<script src="/pages/scripts/Chart.min.js"></script>
+		<script src="/pages/scripts/bootstrap.min.js"></script>
+		<script src="/pages/scripts/bootstrap-toggle.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<title>Home</title>
+	</head>
+	<body>
+		<div id="div-title">
+			<p>Điều khiển thiết bị qua GPRS</p>
+		</div>
+
+		<div id="div-control">
+			<center>
+				<div style="width: 33vw; height: 100%; margin: auto;">
+					<div id="div-switch1" style="margin-left: 1vw; float: left;">
+						<input id="switch1" type="checkbox" enabled data-toggle="toggle" data-on="Relay 1" data-off="Relay 1" data-onstyle="success" data-offstyle="danger" data-width="10vw" data-height="7vw" id="switch1">
+					</div>
+					<div id="div-switch2" style="margin-left: 1vw; float: left;">
+						<input id="switch2" type="checkbox" enabled data-toggle="toggle" data-on="Relay 2" data-off="Relay 2" data-onstyle="success" data-offstyle="danger" data-width="10vw" data-height="7vw" id="switch2">
+					</div>
+					<div id="div-switch3" style="margin-left: 1vw; float: left;">
+						<input id="switch3" type="checkbox" enabled data-toggle="toggle" data-on="Relay 3" data-off="Relay 3" data-onstyle="success" data-offstyle="danger" data-width="10vw" data-height="7vw" id="switch3">
+					</div>
+				</div>
+			</center>
+		</div>
+
+		<div id="div-chart">
+			<center>
+				<div style="width: 65%;">
+					<canvas id="mychart"></canvas>
+				</div>
+			</center>
+		</div>
+	</body>
+</html>
+<script language="JavaScript" src="/pages/scripts/client.js"></script>
+<link href="/pages/css/style.css" rel="stylesheet">

@@ -1,0 +1,29 @@
+body{
+    width: auto;
+    height: auto;
+    margin: auto;
+    font-size: 18px;
+    color: black;
+    background-color: white;
+}
+
+#div-title{
+    width: 100%;
+    height: 10%;
+}
+
+#div-title p{
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+#div-control{
+    width: 100%;
+    height: 20%;
+}
+
+#div-chart{
+    width: 100%;
+    height: 70%;
+}
