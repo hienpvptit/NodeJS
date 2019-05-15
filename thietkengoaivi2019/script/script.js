@@ -20,11 +20,11 @@ $(document).ready(function () {
         },
         elements:{
             point:{
-                radius: 4
+                radius: 2
             }
         },
         animation: {
-            duration: 500
+            duration: 2000
         }
     };
 
