@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Debug</title>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <script>
+        var socket = io.connect();
+
+        socket.on("connect", function (data) {
+            socket.emit("connection", "Connected");
+        });
+
+        socket.on("debug", function (data) {
+            data = JSON.parse(data);
+            console.log(data);
+        })
+    </script>
+</body>
+</html>
